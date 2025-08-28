@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "tailwindcss": "^4.1.7",
+    "tailwindcss-animated": "^2.0.0"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  }
+}

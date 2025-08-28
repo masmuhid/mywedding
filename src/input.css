@@ -1,0 +1,126 @@
+/* 
+  npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Elsie+Swash+Caps:wght@400;900&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@tailwind utilities;
+
+@import "tailwindcss";
+@import "tailwindcss-animated";
+@import "animate.css";
+/* @import "aos"; */
+
+/* Sembunyikan scrollbar tapi tetap bisa scroll */
+html {
+  overflow-y: scroll; /* Paksa scrollbar selalu ada (meski tidak dibutuhkan) */
+}
+body::-webkit-scrollbar {
+  background-color: #fff;
+  width: 14px;
+}
+body::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid #fff;
+}
+
+@theme {
+  --font-playfair: "Playfair Display", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-dongle: "Dongle", sans-serif;
+  --font-playball: "Playball", sans-serif;
+  --font-elsie: "Elsie Swash Caps", cursive;
+  --font-poppins: "Poppins", sans-serif;
+  --font-great: "Great Vibes", cursive;
+  --color-primary: #613536;
+  --color-secondary: #54595f;
+  --color-abu: #54595f;
+}
+
+@keyframes scaleUpDown {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-scaleUpDown {
+  animation: scaleUpDown 3.5s ease-in-out infinite;
+}
+
+@keyframes fadeInBottomLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInBottomLeft {
+  animation-name: fadeInBottomLeft;
+}
+
+.event-background {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 5%,
+      #fff8ee 65%
+    ),
+    url("/assets/img/cover2.jpg"), url("/assets/img/background-cut.png");
+  background-size: 100% 35%, contain, contain;
+  background-position: center 45%, top, bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: normal;
+}
+
+/* custom countdown */
+.custom-countdown-theme {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 10px 0;
+}
+
+.custom-countdown-theme > .simply-section {
+  width: 60px;
+  height: 60px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.custom-countdown-theme > .simply-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.8;
+}
+
+.custom-countdown-theme > .simply-section .simply-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #613536;
+  margin-bottom: 0px;
+}
+
+.custom-countdown-theme > .simply-section .simply-word {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #613536;
+  opacity: 90%;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}

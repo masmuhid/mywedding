@@ -1,0 +1,455 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+
+  <link rel="website icon" type="png" href="assets/img/favicon.png">
+
+  <!-- simply countdown -->
+  <link rel="stylesheet" href="assets/css/simplyCountdown.js-master/dist/themes/default.css">
+  <link rel="stylesheet" href="assets/css/simplyCountdown.js-master/dist/themes/dark.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body class="bg-white shadow">
+
+  <!-- COVER SECTION -->
+  <div class="flex justify-center">
+    <section id="cover"
+      class="bg-[url(/assets/img/background.jpg)] max-w-md w-full min-h-screen relative overflow-hidden">
+      <!-- TOP RIGHT -->
+      <div class="animate__animated animate__fadeInTopRight animate__slower">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute top-0 right-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="absolute top-[-18px] right-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute top-0 right-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt="" class="animate-scaleUpDown absolute top-0 right-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="absolute top-0 right-0 w-[48px]">
+      </div>
+
+      <!-- TOP LEFT -->
+      <div class="animate__animated animate__fadeInTopLeft animate__slower">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="scale-x-[-1] animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute top-0 left-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="scale-x-[-1] absolute top-[-18px] left-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="scale-x-[-1] animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute top-0 left-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt="" class="scale-x-[-1] animate-scaleUpDown absolute top-0 left-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="scale-x-[-1] absolute top-0 left-0 w-[48px]">
+      </div>
+
+      <!-- BOTTOM RIGHT -->
+      <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute bottom-0 right-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt=""
+          class="scale-x-[-1] rotate-180 absolute bottom-[-18px] right-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute bottom-0 right-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-scaleUpDown absolute bottom-0 right-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="scale-x-[-1] rotate-180 absolute bottom-0 right-0 w-[48px]">
+      </div>
+
+      <!-- BOTTOM LEFT -->
+      <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute bottom-0 left-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="rotate-180 absolute bottom-[-18px] left-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute bottom-0 left-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt=""
+          class="rotate-180 animate-scaleUpDown absolute bottom-0 left-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="rotate-180 absolute bottom-0 left-0 w-[48px]">
+      </div>
+
+      <!-- CONTENT-->
+      <div
+        class="flex flex-col items-center justify-center h-screen animate__animated animate__zoomIn animate__slower animate__delay-1s">
+        <!-- cover image -->
+        <div class="w-45 h-60 rounded-xl overflow-hidden shadow-[0_0_14px_rgba(0,0,0,0.5)]">
+          <img src="assets/img/cover.jpg" alt="Foto Pengantin"
+            class="w-full h-full object-cover object-center rounded-xl border-4 border-neutral-50">
+        </div>
+
+        <!-- subtitle -->
+        <p class="uppercase mt-5 text-lg text-primary font-bold tracking-wide font-dongle">
+          You are invited to our wedding
+        </p>
+
+        <!-- couple name -->
+        <h1 class="text-3xl text-primary font-playfair my-4">Putri & Wahid</h1>
+
+        <!-- description -->
+        <p class="text-xs text-secondary tracking-wide font-poppins mt-2">
+          Kepada Yth. Bapak/Ibu/Saudara/i
+        </p>
+        <h2 class="text-3xl text-primary font-dongle mb-4">Nanang & Nunung</h2>
+
+        <button id="openInvitation"
+          class="cursor-pointer flex items-center gap-2 bg-primary/90 hover:bg-primary text-white p-[6px] mt-4 rounded-lg shadow-xl transition font-semibold font-dongle tracking-widest uppercase">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-5">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+          </svg>
+          Buka Undangan
+        </button>
+      </div>
+    </section>
+  </div>
+
+  <!-- DATE SECTION -->
+  <div class="flex justify-center">
+    <section id="date" class="hidden event-background bg-center max-w-md w-full min-h-screen relative overflow-hidden">
+      <!-- BOTTOM RIGHT -->
+      <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute bottom-0 right-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt=""
+          class="scale-x-[-1] rotate-180 absolute bottom-[-18px] right-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute bottom-0 right-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-scaleUpDown absolute bottom-0 right-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="scale-x-[-1] rotate-180 absolute bottom-0 right-0 w-[48px]">
+      </div>
+
+      <!-- BOTTOM LEFT -->
+      <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute bottom-0 left-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="rotate-180 absolute bottom-[-18px] left-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute bottom-0 left-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt=""
+          class="rotate-180 animate-scaleUpDown absolute bottom-0 left-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="rotate-180 absolute bottom-0 left-0 w-[48px]">
+      </div>
+
+      <div class="flex flex-col items-center justify-center pt-40 h-screen">
+        <img src="/assets/img/gunungan-wood.png" alt="" class="w-10">
+        <h1
+          class="text-3xl text-primary font-playfair my-4 animate__animated animate__fadeInDown animate__slower animate__delay-1s">
+          Romeo & Juliet</h1>
+        <p
+          class="uppercase text-xl text-secondary font-bold tracking-wide font-dongle animate__animated animate__fadeInUp animate__slower animate__delay-1s">
+          Save the date</p>
+        <p
+          class="uppercase text-2xl text-primary font-bold tracking-wide font-dongle mb-4 animate__animated animate__fadeInUp animate__slower animate__delay-1s">
+          Minggu, 23 November 2025</p>
+        <div
+          class="my-countdown custom-countdown-theme font-dongle animate__animated animate__fadeInUp animate__slower animate__delay-1s">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- BRIDE SECTION -->
+  <div class="flex justify-center">
+    <section id="bride"
+      class="hidden bg-[url(/assets/img/background-rotate.jpg)] bg-center max-w-md w-full relative overflow-hidden">
+      <!-- TOP RIGHT -->
+      <div class="animate__animated animate__fadeInTopRight animate__slower">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute top-0 right-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="absolute top-[-18px] right-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute top-0 right-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt="" class="animate-scaleUpDown absolute top-0 right-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="absolute top-0 right-0 w-[48px]">
+      </div>
+
+      <!-- TOP LEFT -->
+      <div class="animate__animated animate__fadeInTopLeft animate__slower">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="scale-x-[-1] animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute top-0 left-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="scale-x-[-1] absolute top-[-18px] left-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="scale-x-[-1] animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute top-0 left-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt="" class="scale-x-[-1] animate-scaleUpDown absolute top-0 left-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="scale-x-[-1] absolute top-0 left-0 w-[48px]">
+      </div>
+
+      <!-- BOTTOM RIGHT -->
+      <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute bottom-0 right-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt=""
+          class="scale-x-[-1] rotate-180 absolute bottom-[-18px] right-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute bottom-0 right-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt=""
+          class="scale-x-[-1] rotate-180 animate-scaleUpDown absolute bottom-0 right-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="scale-x-[-1] rotate-180 absolute bottom-0 right-0 w-[48px]">
+      </div>
+
+      <!-- BOTTOM LEFT -->
+      <div class="animate__animated animate__fadeIn animate__slower animate__delay-1s">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute bottom-0 left-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="rotate-180 absolute bottom-[-18px] left-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="rotate-180 animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute bottom-0 left-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt=""
+          class="rotate-180 animate-scaleUpDown absolute bottom-0 left-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="rotate-180 absolute bottom-0 left-0 w-[48px]">
+      </div>
+
+      <!-- CONTENT -->
+      <div class="relative z-10 flex flex-col items-center mt-10 space-y-4 text-center px-4 pb-30">
+        <img src="assets/img/gunungan-wood.png" alt="gunungan" class="w-10">
+        <img src="assets/img/bismillah.svg" alt="bismillah" class="w-40" data-aos="fade-up">
+
+        <p class="text-[18px] text-primary font-extrabold leading-[18px] font-playfair" data-aos="fade-up">
+          Assalamu'alaikum Wr. Wb.
+        </p>
+        <div class="text-[13px] font-poppins font-medium text-abu leading-5 max-w-md" data-aos="fade-up">
+          <p>Tanpa mengurangi rasa hormat.<br>
+            Kami mengundang Bapak/Ibu/Saudara/i serta kerabat sekalian untuk menghadiri acara pernikahan kami :
+          </p>
+        </div>
+
+        <!-- Bride -->
+        <div class="mt-3 text-center w-full max-w-xs mx-auto">
+          <div class="w-28 mx-auto rounded-xl overflow-hidden shadow-[0_0_14px_rgba(0,0,0,0.5)]" data-aos="fade-down">
+            <img src="assets/img/cpw.webp" alt="Foto Pengantin"
+              class="w-full h-full object-cover object-center rounded-xl border-4 border-neutral-50">
+          </div>
+          <h2 class="font-playball text-3xl font-medium leading-[30px] text-primary mt-4" data-aos="fade-down">Tri
+            Maryani Putri</h2>
+          <p class="text-[14px] text-abu font-poppins font-medium leading-[21px] mt-3" data-aos="fade-down">
+            Putri Ketiga Bapak Maulana<br>
+            & Ibu Hartini
+          </p>
+        </div>
+
+        <h4 class="font-elsie text-2xl" data-aos="fade" data-aos-duration="3000">&</h4>
+
+        <!-- Groom -->
+        <div class="mt-3 text-center w-full max-w-xs mx-auto pb-20">
+          <div class="w-28 mx-auto rounded-xl overflow-hidden shadow-[0_0_14px_rgba(0,0,0,0.5)]" data-aos="fade-up">
+            <img src="assets/img/cpw.webp" alt="Foto Pengantin"
+              class="w-full h-full object-cover object-center rounded-xl border-4 border-neutral-50">
+          </div>
+          <h2 class="font-playball text-3xl font-medium leading-[30px] text-primary mt-4" data-aos="fade-up">M.
+            Nurrohmat Wahid</h2>
+          <p class="text-[14px] text-abu font-poppins font-medium leading-[21px] mt-3" data-aos="fade-up">
+            Putra Pertama Bapak Mustakim<br>
+            & Ibu Darwati
+          </p>
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <!-- LOVE STORY SECTION -->
+  <div class="flex justify-center">
+    <section id="other"
+      class="hidden bg-[url(/assets/img/background-rotate.jpg)] bg-center max-w-md w-full min-h-screen relative overflow-hidden">
+
+      <!-- QUOTE -->
+      <div class="w-full h-auto bg-primary text-white text-center font-poppins p-6 text-[12px] relative z-50">
+        <div class="" data-aos="fade">
+          <p>"Nikahkanlah orang-orang yang masih membujang di antara kamu dan juga orang-orang yang layak (menikah) dari
+            hamba-hamba sahayamu, baik laki-laki maupun perempuan. Jika mereka miskin, Allah akan memberi kemampuan
+            kepada mereka dengan karunia-Nya. Allah Maha Luas (pemberian-Nya) lagi Maha Mengetahui."</p>
+          <p class="mt-4">QS. An Nur: 32</p>
+        </div>
+      </div>
+
+      <!-- TOP RIGHT -->
+      <div class="" data-aos="fade-left">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute top-0 right-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="absolute top-[-18px] right-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute top-0 right-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt="" class="animate-scaleUpDown absolute top-0 right-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="absolute top-0 right-0 w-[48px]">
+      </div>
+
+      <!-- TOP LEFT -->
+      <div class="" data-aos="fade-right">
+        <img src="assets/img/bunga-527.webp" alt=""
+          class="scale-x-[-1] animate-wiggle animate-infinite animate-ease-linear animate-delay-[1000ms] animate-duration-[3.5s] absolute top-0 left-0 w-44">
+        <img src="assets/img/bunga-499.webp" alt="" class="scale-x-[-1] absolute top-[-18px] left-10 w-42">
+        <img src="assets/img/bunga-321.webp" alt=""
+          class="scale-x-[-1] animate-wiggle animate-infinite animate-ease-linear animate-duration-[3.5s] absolute top-0 left-0 w-34">
+        <img src="assets/img/bunga-563.webp" alt="" class="scale-x-[-1] animate-scaleUpDown absolute top-0 left-0 w-42">
+        <img src="assets/img/bunga-534.webp" alt="" class="scale-x-[-1] absolute top-0 left-0 w-[48px]">
+      </div>
+
+      <!-- CONTENT -->
+      <h1 class="text-center text-primary font-great font-extralight text-5xl leading-12 mt-24" data-aos="fade">Love Story</h1>
+      <div class="w-[340px] h-[220px] mx-auto rounded-xl overflow-hidden shadow-[0_0_14px_rgba(0,0,0,0.5)] my-10" data-aos="fade-down">
+        <img src="assets/img/cover.jpg" alt="Foto Pengantin"
+          class="w-full h-full object-cover object-top rounded-xl border-4 border-neutral-50">
+      </div>
+
+      <!-- Container pembungkus slider -->
+      <!-- <div class="flex justify-center items-center w-full relative"> -->
+        <div class="swiper max-w-md flex justify-center mx-auto relative">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide !w-80 flex justify-center">
+              <div
+                class="w-80 h-96 bg-[#613536] border-2 border-[#E3D6B8] rounded-2xl flex items-center justify-center text-amber-700 font-semibold">
+                Slide 1
+              </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide !w-80 flex justify-center">
+              <div
+                class="w-80 h-96 bg-[#613536] border-2 border-[#E3D6B8] rounded-2xl flex items-center justify-center text-amber-700 font-semibold">
+                Slide 2
+              </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide !w-80 flex justify-center">
+              <div
+                class="w-80 h-96 bg-[#613536] border-2 border-[#E3D6B8] rounded-2xl flex items-center justify-center text-amber-700 font-semibold">
+                Slide 3
+              </div>
+            </div>
+          </div>
+
+          <!-- Tombol navigasi -->
+          <div
+            class="swiper-button-prev !w-10 !h-10 !bg-[#613536] !rounded-full after:!hidden flex items-center justify-center shadow-md">
+            <!-- Ikon kiri -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </div>
+          <div
+            class="swiper-button-next !w-10 !h-10 !bg-[#613536] !rounded-full after:!hidden flex items-center justify-center shadow-md">
+            <!-- Ikon kanan -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </div>
+
+          <!-- Pagination -->
+          <div
+            class="swiper-pagination !bottom-2 [&>.swiper-pagination-bullet]:!bg-[#E3D6B8] [&>.swiper-pagination-bullet-active]:!bg-[#E3D6B8]">
+          </div>
+
+        </div>
+      <!-- </div> -->
+
+
+      <div class="pb-15 mt-20"></div>
+
+    </section>
+  </div>
+
+  <script src="assets/css/simplyCountdown.js-master/dist/simplyCountdown.js"></script>
+  <script src="assets/css/simplyCountdown.js-master/dist/simplyCountdown.umd.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize AOS (Animated on Scroll) -->
+  <script>
+    AOS.init({
+      duration: 2000,
+      easing: 'ease-in-out'
+    });
+  </script>
+
+  <!-- Open Invitation Button -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const openBtn = document.getElementById("openInvitation");
+      const coverSection = document.getElementById("cover");
+      const otherSections = document.querySelectorAll("section:not(#cover)");
+
+      openBtn.addEventListener("click", function () {
+
+        // Tampilkan section lain lebih dulu (dengan animasi masuk)
+        otherSections.forEach(section => {
+          section.classList.remove("hidden");
+          section.classList.add("animate__animated", "animate__fadeIn", "animate__slower", "animate__delay-2s")
+        });
+
+        // Tambahkan animasi fadeOutUp ke cover
+        coverSection.classList.add("animate__animated", "animate__fadeOut");
+
+        // Ketika animasi selesai
+        coverSection.addEventListener("animationend", function handleAnimationEnd() {
+          // Refresh AOS agar mendeteksi ulang
+          setTimeout(() => AOS.refresh(), 100);
+          // Setelah itu sembunyikan cover
+          coverSection.classList.add("hidden");
+
+          // Hapus event listener agar tidak berulang
+          coverSection.removeEventListener("animationend", handleAnimationEnd);
+
+        });
+      });
+    });               
+  </script>
+
+  <!-- Initialize Countdown -->
+  <script>
+
+    simplyCountdown('.my-countdown', {
+      year: 2025,
+      month: 11,
+      day: 23,
+      words: { // Custom labels, with lambda for plurals
+        days: {
+          root: 'hari',
+          lambda: (root, n) => n > 1 ? root + '' : root
+        },
+        hours: {
+          root: 'jam',
+          lambda: (root, n) => n > 1 ? root + '' : root
+        },
+        minutes: {
+          root: 'menit',
+          lambda: (root, n) => n > 1 ? root + '' : root
+        },
+        seconds: {
+          root: 'detik',
+          lambda: (root, n) => n > 1 ? root + '' : root
+        }
+      },
+      plural: false, // Use plurals for labels
+    });
+  </script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: false,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+</body>
+
+</html>
